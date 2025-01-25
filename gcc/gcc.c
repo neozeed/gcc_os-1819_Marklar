@@ -5880,7 +5880,7 @@ do_spec_1 (spec, inswitch, soft_matched_part)
 		  if (q == vt || *q != ')')
 		    abort ();
 		  v = xstrdup (vt);
-		  v[q - vt] = 0;
+		  (char ) v[q - vt] = 0;
 		}
 	      /* APPLE LOCAL end Apple version */
 
